@@ -1,0 +1,128 @@
+<div class="container">
+  <h2 class="text-center text-light pt-4">Alpha Pos System</h2>
+  <div class="row">
+    {{!-- left side order list --}}
+    <div class="col-md-4 p-4" data-order-lists>
+      <div class="card mb-3">
+        <div class="card-body pt-3 pr-3">
+          <div class="text-end">
+            <span data-alpha-pos="delete-drink">x</span>
+          </div>
+          <h6 class="card-title mb-1">Black Tea</h6>
+          <div class="card-text">Less Ice</div>
+          <div class="card-text">Half Sugar</div>
+        </div>
+        <div class="card-footer text-end py-2">
+          <div class="card-text text-muted">
+            $ <span data-drink-price>30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-end">
+        <button class="btn btn-light" style="min-width:120px;" data-alpha-pos="checkout">
+          Check Out
+        </button>
+      </div>
+    </div>
+    {{!-- left side menu --}}
+    <div class="col-md-8 p-4">
+      <section class="menu">
+        {{!-- first rwo --}}
+        <div class="card-deck row">
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Black Tea</h5>
+              <input type="radio" name="drink" value="Black Tea">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Oolong Tea</h5>
+              <input type="radio" name="drink" value="Oolong Tea">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Baozong Tea</h5>
+              <input type="radio" name="drink" value="Baozong Tea">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Green Tea</h5>
+              <input type="radio" name="drink" value="Green Tea">
+            </label>
+          </div>
+        </div>
+        {{!-- the second row --}}
+        <div class="card-deck row">
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Bubble Milk Tea</h5>
+              <input type="radio" name="drink" value="Bubble Milk Tea">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Black Tea Latte</h5>
+              <input type="radio" name="drink" value="Black Tea Latte">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Lemon Green</h5>
+              <input type="radio" name="drink" value="Lemon Green">
+            </label>
+          </div>
+          <div class="card text-center col-3">
+            <label class="card-body px-2">
+              <h5 class="card-title">Matcha Latte</h5>
+              <input type="radio" name="drink" value="Matcha Latte">
+            </label>
+          </div>
+        </div>
+      </section>
+      {{!-- 冰塊 --}}
+      <section class="ice mb-4">
+        <label class="d-block text-light">Ice</label>
+        {{!-- bootstrap 4 button group --}}
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label for="No-Ice" class="btn btn-outline-primary">
+            <input id="No-Ice" type="radio" name="ice" value="No Ice">No
+          </label>
+          <label for="Less-Ice" class="btn btn-outline-primary">
+            <input id="Less-Ice" type="radio" name="ice" value="Less Ice">Less
+          </label>
+          <label for="Regular-Ice" class="btn btn-outline-primary">
+            <input id="Regular-Ice" type="radio" name="ice" value="Regular Ice" checked>Regular
+          </label>
+        </div>
+      </section>
+      {{!-- 甜度 --}}
+      <section class="Sugar mb-4">
+        <label class="d-block text-light">Sugar</label>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label for="No-Sugar" class="btn btn-outline-info">
+            <input id="No-Sugar" type="radio" name="sugar" value="No Sugar">No
+          </label>
+          <label for="A-little-Sugar" class="btn btn-outline-info">
+            <input id="A-little-Sugar" type="radio" name="sugar" value="A-little-Sugar">A-little-Sugar
+          </label>
+          <label for="Half-Sugar" class="btn btn-outline-info">
+            <input id="Half-Sugar" type="radio" name="sugar" value="Half Sugar">Half-Sugar
+          </label>
+          <label for="Less-Sugar" class="btn btn-outline-info">
+            <input id="Less-Sugar" type="radio" name="sugar" value="Less Sugar">Less
+          </label>
+          <label for="Regular-Sugar" class="btn btn-outline-info">
+            <input id="Regular-Sugar" type="radio" name="sugar" value="Regular Sugar" checked>Regular
+          </label>
+        </div>
+      </section>
+      <div class="text-end">
+        <div class="btn btn-light mt-5" style="min-width: 120px;" data-alpha-pos="add-drink">Add</div>
+      </div>
+    </div>
+  </div>
+</div>
